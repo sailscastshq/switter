@@ -18,5 +18,7 @@ module.exports.policies = {
   ***************************************************************************/
 
   // '*': true,
+  'sweet/*': 'isLoggedIn',
+  'sweet/get-sweets': true
 
 };

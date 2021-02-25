@@ -11,5 +11,10 @@
 module.exports.routes = {
   'GET /': 'home/index',
   'POST /users': 'user/join',
-  'POST /users/login': 'user/login'
+  'POST /users/login': 'user/login',
+  'POST /sweets': 'sweet/create',
+  'GET /sweets': 'sweet/get-sweets',
+  'GET /sweets/:sweet': 'sweet/get-sweet',
+  'PATCH /sweets/:sweet': 'sweet/update-sweet',
+  'DELETE /sweets/:sweet': 'sweet/delete-sweet'
 };

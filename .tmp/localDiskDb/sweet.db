@@ -1,17 +1,5 @@
 {"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
-{"createdAt":1614219907322,"updatedAt":1614256074216,"id":1,"text":"Update sweet from postman again and again","sweet":null,"author":6,"_id":1}
-{"createdAt":1614220148343,"updatedAt":1614220148343,"id":2,"text":"My second sweet on switter","sweet":null,"author":7,"_id":2}
-{"createdAt":1614220349325,"updatedAt":1614220349325,"id":3,"text":"My third sweet on switter","sweet":null,"author":7,"_id":3}
-{"createdAt":1614220363616,"updatedAt":1614220363616,"id":4,"text":"My fourth sweet on switter","sweet":null,"author":7,"_id":4}
-{"createdAt":1614251119978,"updatedAt":1614251119978,"id":5,"text":"This is really awesome","sweet":4,"author":null,"_id":5}
-{"createdAt":1614251690727,"updatedAt":1614251690727,"id":6,"text":"This is really awesome","sweet":4,"author":6,"_id":6}
-{"createdAt":1614251717089,"updatedAt":1614251717089,"id":7,"text":"This is really awesome","sweet":4,"author":6,"_id":7}
-{"createdAt":1614251768757,"updatedAt":1614251768757,"id":8,"text":"This is really awesome","sweet":4,"author":6,"_id":8}
-{"createdAt":1614251778470,"updatedAt":1614251778470,"id":9,"text":"This is really awesome","sweet":4,"author":6,"_id":9}
-{"createdAt":1614251906949,"updatedAt":1614251906949,"id":10,"text":"This is really awesome","sweet":3,"author":6,"_id":10}
-{"createdAt":1614251915369,"updatedAt":1614251915369,"id":11,"text":"This is really awesome","sweet":200,"author":6,"_id":11}
-{"createdAt":1614252018073,"updatedAt":1614252018073,"id":12,"text":"This is really awesome","sweet":1,"author":7,"_id":12}
-{"createdAt":1614254006027,"updatedAt":1614254006027,"id":13,"text":"Another beautiful sweet","sweet":null,"author":6,"_id":13}
-{"$$deleted":true,"_id":1}
-{"createdAt":1614252018073,"updatedAt":1614256509633,"id":12,"text":"This is really awesome","sweet":null,"author":7,"_id":12}
-{"$$deleted":true,"_id":13}
+{"createdAt":1614276439794,"updatedAt":1614276439794,"id":15,"text":"New sweet on switter","author":3,"_id":15}
+{"$$deleted":true,"_id":15}
+{"text":"Another Sweet","author":3,"createdAt":1614277514585,"updatedAt":1614277514585,"id":16,"_id":16}
+{"text":"Another Sweeter sweet","author":3,"createdAt":1614277523679,"updatedAt":1614277523679,"id":17,"_id":17}
