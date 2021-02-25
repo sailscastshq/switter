@@ -23,5 +23,7 @@ module.exports.routes = {
 
   'PATCH /sweets/:sweet': 'sweet/update-sweet',
 
+  'DELETE /sweets/:sweet': 'sweet/delete-sweet',
+
   'POST /sweets/:sweet/comments': 'sweet/create-comment'
 };
