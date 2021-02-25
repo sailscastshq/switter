@@ -42,13 +42,7 @@ module.exports = {
     sweets: {
       collection: 'sweet',
       via: 'author'
-    },
-
-    comments: {
-      collection: 'sweet',
-      via: 'commenter'
     }
-
   },
 
   customToJSON: function () {

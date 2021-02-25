@@ -17,5 +17,7 @@ module.exports.routes = {
 
   'POST /sweets': 'sweet/create',
 
-  'GET /sweets': 'sweet/all-sweets'
+  'GET /sweets': 'sweet/get-sweets',
+
+  'POST /sweets/:sweet/comments': 'sweet/create-comment'
 };

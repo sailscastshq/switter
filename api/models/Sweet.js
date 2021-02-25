@@ -26,17 +26,19 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+    sweet: {
+      model: 'sweet'
+    },
+
     author: {
       model: 'user'
     },
 
     comments: {
       collection: 'sweet',
+      via: 'sweet'
     },
 
-    commenter: {
-      collection: 'user'
-    }
   },
 
 };

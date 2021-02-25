@@ -34,7 +34,10 @@ module.exports = {
   fn: async function ({email, password}, exits) {
 
     try {
+
       const user = await User.findOne({email}).decrypt()
+
+      sails.log(user)
 
 
       if (!user || (user.password !== password || user.email !== email)) {
