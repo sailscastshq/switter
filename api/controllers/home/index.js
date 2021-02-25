@@ -1,11 +1,8 @@
 module.exports = {
 
-
   friendlyName: 'Index',
 
-
   description: 'Index home.',
-
 
   inputs: {
 
@@ -13,14 +10,15 @@ module.exports = {
 
 
   exits: {
+    success: {
+      description: 'Successfully reached root endpoint'
+    }
 
   },
 
 
-  fn: async function (inputs) {
-
-    // All done.
-    return;
+  fn: async function (inputs, exits) {
+    return exits.success({message: 'You\'ve reached the switter API. We are like twitter but sweeter'});
 
   }
 
