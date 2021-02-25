@@ -1,5 +1,5 @@
 /**
- * User.js
+ * Sweet.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -12,24 +12,11 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-    name: {
-      description: 'Fullname of user',
+    text: {
       type: 'string',
       required: true
     },
-    email: {
-      description: 'Email address of user',
-      type: 'string',
-      isEmail: true,
-      unique: true,
-      required: true
-    },
-    password: {
-      description: 'Password of user',
-      type: 'string',
-      encrypt: true,
-      required: true
-    },
+
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -39,23 +26,18 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    sweets: {
-      collection: 'sweet',
-      via: 'author'
+    author: {
+      model: 'user'
     },
 
     comments: {
       collection: 'sweet',
-      via: 'commenter'
+    },
+
+    commenter: {
+      collection: 'user'
     }
-
   },
-
-  customToJSON: function () {
-
-    return _.omit(this, ['password'])
-
-  }
 
 };
 
