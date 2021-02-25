@@ -9,5 +9,6 @@
  */
 
 module.exports.routes = {
-
+  'GET /': 'home/index',
+  'POST /users': 'user/join'
 };

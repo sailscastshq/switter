@@ -13,14 +13,15 @@ module.exports = {
 
 
   exits: {
-
+    success: {
+      description: 'Show endpoint message'
+    }
   },
 
 
-  fn: async function (inputs) {
+  fn: async function (inputs, exits) {
 
-    // All done.
-    return;
+    return exits.success({message: 'Welcome to Switter. We are like Twitter but Sweeter :)'});
 
   }
 
