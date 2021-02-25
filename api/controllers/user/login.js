@@ -35,26 +35,23 @@ module.exports = {
 
     try {
 
-      const user = await User.findOne({email}).decrypt()
-
-      sails.log(user)
-
+      const user = await User.findOne({email}).decrypt();
 
       if (!user || (user.password !== password || user.email !== email)) {
 
-        return exits.badRequest({success: false, message: 'Login credentials combination is invalid'})
+        return exits.badRequest({success: false, message: 'Login credentials combination is invalid'});
 
       }
 
 
-      this.req.session.userId = user.id
+      this.req.session.userId = user.id;
 
-      return exits.success({success: true, user})
+      return exits.success({success: true, user});
     } catch (error) {
 
-      sails.log(error)
+      sails.log(error);
 
-      return exits.error({success: false, message: error.message})
+      return exits.error({success: false, message: error.message});
 
     }
 

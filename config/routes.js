@@ -19,5 +19,9 @@ module.exports.routes = {
 
   'GET /sweets': 'sweet/get-sweets',
 
+  'GET /sweets/:sweet': 'sweet/get-sweet',
+
+  'PATCH /sweets/:sweet': 'sweet/update-sweet',
+
   'POST /sweets/:sweet/comments': 'sweet/create-comment'
 };
