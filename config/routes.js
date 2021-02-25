@@ -15,5 +15,7 @@ module.exports.routes = {
 
   'POST /users/login': 'user/login',
 
-  'POST /sweets': 'sweet/create'
+  'POST /sweets': 'sweet/create',
+
+  'GET /sweets': 'sweet/all-sweets'
 };
